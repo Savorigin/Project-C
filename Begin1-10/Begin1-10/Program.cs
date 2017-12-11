@@ -12,18 +12,22 @@ namespace Begin1_10
         }
         static void Begin1()
         {
+            // Дана сторона квадрата a. Найти его периметр P = 4·a.
             double a = Square();
             double P = 4 * a;
             Console.WriteLine("Периметр квадрата = " + P.ToString());
         }
         static void Begin2()
         {
+            // Дана сторона квадрата a. Найти его площадь S = a2.
             double a = Square();
             double S = Math.Pow(a, 2);
             Console.WriteLine("Площадь квадрата = " + S.ToString());
         }
         static void Begin3()
         {
+            // Даны стороны прямоугольника a и b. Найти его площадь S = a·b и
+            // периметр P = 2·(a + b).
             Console.WriteLine("Введите 1 сторону прямоугольника");
             string S1 = Console.ReadLine();
             Console.WriteLine("Введите 2 сторону прямоугольника");
@@ -37,6 +41,7 @@ namespace Begin1_10
         }
         static void Begin4()
         {
+            // Дан диаметр окружности d. Найти ее длину L = π·d. В качестве значения π использовать 3.14.
             double d = 15;
             const double pi = 3.14;
             double L = pi * d;
@@ -44,6 +49,7 @@ namespace Begin1_10
         }
         static void Begin5()
         {
+            // Дана длина ребра куба a. Найти объем куба V = a3 и площадь его поверхности S = 6·a2.
             double a = 23;
             double V = Math.Pow(a, 3);
             Console.WriteLine("Объем куба = " + V.ToString());

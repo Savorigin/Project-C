@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70C281FF-2E62-4539-9FBD-B83D33502712}</ProjectGuid>
+    <ProjectGuid>{3BFDB5F0-507A-4438-A652-3BDB7C23A8BB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Integer1_10</RootNamespace>
-    <AssemblyName>Integer1-10</AssemblyName>
+    <RootNamespace>Boolean21_30</RootNamespace>
+    <AssemblyName>Boolean21-30</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
