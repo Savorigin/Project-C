@@ -69,9 +69,70 @@ namespace prj01_ConsoleApplication
             if (d == myMax) count++;
             Console.WriteLine("count of max = " + count);
         }
+        static void Task3()
+        {
+            double a, b, res;
+            Console.WriteLine("Введите 1й операнд:");
+            a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Введите знак");
+            char op = (char)Console.Read(); Console.ReadLine();
+            Console.WriteLine("Введите 2й операнд:");
+            b = double.Parse(Console.ReadLine());
+            bool ok = true;
+            switch (op)
+            {
+                case '+': res = a + b; break;
+                case '-': res = a - b; break;
+                case '*': res = a * b; break;
+                case '/': res = a / b; break;
+                default: res = double.NaN; ok = false; break;
+            }
+            if (ok) Console.WriteLine("Результат: " + res);
+            else Console.WriteLine("Недопустимая операция");
+        }
+        static void Task4()
+        {
+            #region Block1
+            {
+                int i = 0;
+                while (i < 10)
+                {
+                    Console.WriteLine(i);
+                    i++;
+                }
+            }
+            #endregion
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+            for (int i = 0; i < 10; i++) Console.WriteLine(i);
+            {
+                char i = 'a';
+                while (i > 0)
+                {
+                    Console.WriteLine(i + "->" + (int)i);
+                    i--;
+                }
+            }
+            Console.WriteLine("Enter char");
+            Console.WriteLine(Console.Read());
+            Console.WriteLine(Console.Read());
+            Console.WriteLine(Console.Read());
+            char answer = ' ';
+            do
+            {
+                Console.WriteLine("Do you want buy elephant [y/n]");
+                answer = (char)Console.Read();
+                //Console.ReadLine();
+                Console.Clear();
+            } while (answer != 'y' && answer != 'Y');
+        }
         static void Main(string[] args)
         {
-            Task2();
+            Console.WriteLine(MyLib.Fact(5));
+            Console.WriteLine(MyLib.Pow(2, 8));
+            MyLib.Task11();
         }
     }
 }
