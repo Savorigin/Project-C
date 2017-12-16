@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace prj01_ConsoleApplication1
+namespace prj_2017_12_14_Switch
 {
     class Program
     {
-        static int Task1()
+        static int Task2()
         {
             for (int i = 0; i < 10; i++)
             {
@@ -76,7 +76,7 @@ namespace prj01_ConsoleApplication1
                             TaskSwitchMonth(ValidateMonthFromConsole());
                             break;
                         }
-                    case 2: Task1(); break;
+                    case 2: Task2(); break;
                     default: break;
                 }
                 Console.ReadLine();

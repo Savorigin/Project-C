@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace prj01_ConsoleApplication
+namespace prj_2017_12_12_Console_Class
 {
     class Program
     {
