@@ -7,7 +7,7 @@ namespace Case1_40
         static int Menu()
         {
             Console.Clear();
-            Console.WriteLine("0. Exit");
+            Console.WriteLine(" 0. Exit");
             Console.WriteLine("15. Enter cards");
             Console.WriteLine("19. Enter year");
             Console.WriteLine("20. Enter date");

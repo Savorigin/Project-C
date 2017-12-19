@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2017_12_12_Console_Class", "prj01_ConsoleApplication\prj_2017_12_12_Console_Class.csproj", "{FF9A5737-AD2E-4169-8A71-8A86283C89D7}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2017_12_14_Units", "pr03_ConsoleApplication\prj_2017_12_14_Units.csproj", "{A70C47C8-7DBA-412D-AD99-D538031EAE45}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2017_12_14_Cards", "pr04_ConsoleApplication\prj_2017_12_14_Cards.csproj", "{3FD005D4-51E8-446B-A491-B388563E7FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2017_12_19_Array", "prj_2017_12_19_Array\prj_2017_12_19_Array.csproj", "{542E08D8-4D36-4756-9084-C49D3DC101D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3FD005D4-51E8-446B-A491-B388563E7FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FD005D4-51E8-446B-A491-B388563E7FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FD005D4-51E8-446B-A491-B388563E7FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542E08D8-4D36-4756-9084-C49D3DC101D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542E08D8-4D36-4756-9084-C49D3DC101D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542E08D8-4D36-4756-9084-C49D3DC101D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542E08D8-4D36-4756-9084-C49D3DC101D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
