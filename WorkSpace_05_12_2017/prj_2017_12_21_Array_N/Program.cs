@@ -148,18 +148,18 @@ namespace prj_2017_12_21_Array_N
         }
         static void SortMatrix(out int[,] matrix)
         {
-
+            Console.WriteLine();
         }
         static void MaxLineRow(int[,] matrix)
         {
             int prev = 0;
-            int max = 
+            int max = 0;
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 prev = matrix[i, 0];
                 for (int j = 1; j < matrix.GetLength(0); j++)
                 {
-                    if (prev = matrix)
+                    if (prev == matrix[i, j]) { }
                 }
             }
         }
