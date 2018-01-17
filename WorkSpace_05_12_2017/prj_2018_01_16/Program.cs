@@ -29,6 +29,15 @@ namespace Animals
             jery.print();
             micky.print();
             mouse1.print();
+
+            Console.WriteLine("Dogs -------------------------");
+            Dog buz = new Dog("Buzky", 12, 1);
+            buz.print();
+
+            Dog bigy = new Dog("Bigyk", 20, 4);
+            bigy.print();
+            bigy.eat(20);
+            bigy.print();
         }
     }
 }
