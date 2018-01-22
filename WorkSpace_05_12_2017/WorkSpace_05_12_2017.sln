@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2018_01_16_Animals", "p
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2018_01_18_Shop", "prj_2018_01_18_Shop\prj_2018_01_18_Shop.csproj", "{CFBCEA48-E3A3-4124-87B5-52046557ACA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2018_01_22_Bazar", "prj_2018_01_22_Bazar\prj_2018_01_22_Bazar.csproj", "{A584CCF7-839D-4C7B-B9E1-6666AE1E2F7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{CFBCEA48-E3A3-4124-87B5-52046557ACA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFBCEA48-E3A3-4124-87B5-52046557ACA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFBCEA48-E3A3-4124-87B5-52046557ACA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A584CCF7-839D-4C7B-B9E1-6666AE1E2F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A584CCF7-839D-4C7B-B9E1-6666AE1E2F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A584CCF7-839D-4C7B-B9E1-6666AE1E2F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A584CCF7-839D-4C7B-B9E1-6666AE1E2F7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
