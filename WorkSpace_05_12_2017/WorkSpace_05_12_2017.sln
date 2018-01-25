@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2017_12_12_Console_Class", "prj01_ConsoleApplication\prj_2017_12_12_Console_Class.csproj", "{FF9A5737-AD2E-4169-8A71-8A86283C89D7}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2018_01_23_Students", "prj_2018_01_23_Students\prj_2018_01_23_Students.csproj", "{022E1308-4711-4DA4-AE67-3B5FBE7D9485}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2018_01_25_People", "prj_2018_01_25_People\prj_2018_01_25_People.csproj", "{4FBCE5FC-FE67-426D-8907-39134937C755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prj_2018_01_25_Vehicle", "prj_2018_01_25_Vehicle\prj_2018_01_25_Vehicle.csproj", "{BA4AD058-78C8-4E4D-822A-A363922CB54A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{4FBCE5FC-FE67-426D-8907-39134937C755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FBCE5FC-FE67-426D-8907-39134937C755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FBCE5FC-FE67-426D-8907-39134937C755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA4AD058-78C8-4E4D-822A-A363922CB54A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA4AD058-78C8-4E4D-822A-A363922CB54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA4AD058-78C8-4E4D-822A-A363922CB54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA4AD058-78C8-4E4D-822A-A363922CB54A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
