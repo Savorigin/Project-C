@@ -4,17 +4,13 @@ namespace Univer
 {
     class Group
     {
-        Student[] groupStudent;
+        private Student[] groupStudent;
         public Group()
         {
-            Student stud1 = new Student("Vasya", 1, 4);
-            //stud1.Sesiya();
-            //stud1.print();
-
             groupStudent = new Student[5];
             groupStudent[0] = new Student("Tasya", 1, 6);
             groupStudent[1] = new Student("Dasya", 2, 3);
-            groupStudent[2] = stud1;
+            groupStudent[2] = new Student("Vasya", 1, 4);
             groupStudent[3] = new Student("Gasya", 2, 3);
             groupStudent[4] = new Student("Petya", 1, 5);
         }
@@ -25,6 +21,10 @@ namespace Univer
         public void Set(int i, Student student)
         {
             groupStudent[i] = student;
+        }
+        public Student Get(int i)
+        {
+            return groupStudent[i];
         }
         public void Sessiya()
         {
