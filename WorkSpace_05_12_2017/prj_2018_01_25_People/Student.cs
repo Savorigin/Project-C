@@ -2,9 +2,14 @@
 
 namespace People
 {
-    class Student: Human
+    class Student : Human
     {
         public int NumGroup { get; set; }
+        public Student() : base()
+        {
+            Console.WriteLine("Enter NumGroup");
+            NumGroup = int.Parse(Console.ReadLine());
+        }
         public Student(string name, int numGroup): base(name)
         {
            NumGroup = numGroup;
@@ -20,6 +25,10 @@ namespace People
         public override string ToString()
         {
             return $"Student {base.ToString()}, {NumGroup}";
+        }
+        public override void print()
+        {
+            Console.WriteLine("Student " + Name);
         }
     }
 }

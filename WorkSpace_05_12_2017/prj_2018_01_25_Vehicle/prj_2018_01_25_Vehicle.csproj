@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CCar.cs" />
+    <Compile Include="CShip.cs" />
+    <Compile Include="CPlane.cs" />
     <Compile Include="CPoint.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

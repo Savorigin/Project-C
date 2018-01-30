@@ -2,7 +2,7 @@
 
 namespace People
 {
-    class Human
+    abstract class Human
     {
         public string Name { get; set; }
         public Human(string name): base()
@@ -15,11 +15,13 @@ namespace People
         }
         public Human()
         {
-            Name = "Anonim";
+            Console.WriteLine("Enter name");
+            Name = Console.ReadLine();
         }
         public override string ToString()
         {
             return $"Human {Name}";
         }
+        public abstract void print();
     }
 }
