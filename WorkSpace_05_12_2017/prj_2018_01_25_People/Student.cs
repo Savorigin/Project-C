@@ -2,7 +2,7 @@
 
 namespace People
 {
-    class Student : Human
+    class Student : Human, ISwim
     {
         public int NumGroup { get; set; }
         public Student() : base()
@@ -29,6 +29,10 @@ namespace People
         public override void print()
         {
             Console.WriteLine("Student " + Name);
+        }
+        public void Swim()
+        {
+            Console.WriteLine("Swim");
         }
     }
 }

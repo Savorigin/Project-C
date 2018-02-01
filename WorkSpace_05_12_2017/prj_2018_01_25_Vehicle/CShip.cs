@@ -2,7 +2,7 @@
 
 namespace Vehicle
 {
-    class CShip : CVehicle
+    class CShip : CVehicle, ISwimable
     {
         public int CountPassengers { get; set; }
         public string Port { get; set; }
@@ -15,6 +15,10 @@ namespace Vehicle
         {
             CountPassengers = count;
             Port = port;
+        }
+        public int Swim()
+        {
+            return (int) Speed / 2;
         }
     }
 }

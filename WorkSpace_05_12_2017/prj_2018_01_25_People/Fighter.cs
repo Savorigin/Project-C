@@ -2,7 +2,7 @@
 
 namespace People
 {
-    class Fighter: Human
+    class Fighter: Human, ISwim
     {
         public int Power { get; set; }
         public Fighter() : base()
@@ -22,6 +22,10 @@ namespace People
         {
             //Console.WriteLine("Fighter " + Name);
             Console.WriteLine(this);
+        }
+        public void Swim()
+        {
+            Console.WriteLine("Swim");
         }
     }
 }

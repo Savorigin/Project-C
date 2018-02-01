@@ -2,7 +2,7 @@
 
 namespace People
 {
-    abstract class Human
+    abstract class Human : IComparable
     {
         public string Name { get; set; }
         public Human(string name): base()
@@ -23,5 +23,10 @@ namespace People
             return $"Human {Name}";
         }
         public abstract void print();
+
+        public int CompareTo(Object obj)
+        {
+            return this.Name.CompareTo((obj as Human).Name);
+        }
     }
 }

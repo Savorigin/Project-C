@@ -2,7 +2,7 @@
 
 namespace Vehicle
 {
-    class CPlane : CVehicle
+    class CPlane : CVehicle, IFlyable
     {
         public int Hight { get; set; }
         public CPlane(CPoint сoordinate, int price, int speed, int year, int hight) : base(сoordinate, price, speed, year)
@@ -12,6 +12,10 @@ namespace Vehicle
         public CPlane(int сoordinateX, int сoordinateY, int price, int speed, int year, int hight) : base(сoordinateX, сoordinateY, price, speed, year)
         {
             Hight = hight;
+        }
+        public int Fly()
+        {
+            return Speed * 10;
         }
     }
 }

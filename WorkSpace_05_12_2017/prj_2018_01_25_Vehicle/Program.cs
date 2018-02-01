@@ -2,28 +2,6 @@
 
 namespace Vehicle
 {
-    class VehicleFactory
-    {
-        private Random r;
-        public VehicleFactory()
-        {
-            r = new Random();
-        }
-        public CVehicle NextVehicle()
-        {
-            return Get(r.Next(0, 3));
-        }
-        public CVehicle Get(int n)
-        {
-            switch (n)
-            {
-                case 0: return new CCar(13, 75, 12000, 200, 2015);
-                case 1: return new CPlane(73, 15, 250000, 450, 2014, 2500);
-                case 2: return new CShip(150, 275, 5000000, 50, 2000, 500, "Ukraine");
-                default: return null;
-            }
-        }
-    }
     class Program
     {
         static void Main(string[] args)
@@ -98,10 +76,34 @@ namespace Vehicle
             if (maxPrice != null) maxPrice.Print();
 
             Console.WriteLine("--------------------------");
+
             Array.Resize(ref masVeh, countVeh);
             for (int i = 0; i < masVeh.Length; i++)
             {
                 masVeh[i].Print();
+            }
+
+            Console.WriteLine("--------------------------");
+
+            SwimableVehicle sv = new SwimableVehicle();
+            ISwimable[] masSwim = new ISwimable[10];
+
+            for (int i = 0; i < masSwim.Length; i++)
+            {
+                masSwim[i] = sv.NextVehicle();
+            }
+
+            int iSwimable = 0;
+            for (int i = 0; i < vehicle.Length; i++)
+            {
+                if (vehicle[i] is ISwimable)
+                    masSwim[iSwimable++] = vehicle[i] as ISwimable;
+            }
+
+            Array.Resize(ref masSwim, iSwimable);
+            for (int i = 0; i < masSwim.Length; i++)
+            {
+                Console.WriteLine(masSwim);
             }
         }
     }

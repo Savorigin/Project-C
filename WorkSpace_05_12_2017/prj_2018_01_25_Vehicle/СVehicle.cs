@@ -39,5 +39,9 @@ namespace Vehicle
         {
             Console.WriteLine($"Vehicle({Coordinate.X},{Coordinate.Y}), price {Price}, speed {Speed}, year {Year}");
         }
+        public override string ToString()
+        {
+            return $"Vehicle({Coordinate.X},{Coordinate.Y}), price {Price}, speed {Speed}, year {Year}";
+        }
     }
 }
