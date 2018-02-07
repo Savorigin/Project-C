@@ -87,5 +87,9 @@ namespace Univer
             }
             Console.WriteLine($"{Name}, {NumGroup}, {marksStr}");
         }
+        public override string ToString()
+        {
+            return Name + ", " + NumGroup + ", " + Marks.Length;
+        }
     }
 }
