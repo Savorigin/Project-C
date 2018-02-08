@@ -58,6 +58,13 @@ namespace Univer
             int numMarks = int.Parse(Console.ReadLine());
             Marks = new TypeMarks(numMarks);
         }
+        public Student(string s)
+        {
+            string[] elems = s.Split(';');
+            Name = elems[0];
+            NumGroup = int.Parse(elems[1]);
+            Marks = new TypeMarks(int.Parse(elems[2]));
+        }
         public Student(string name, int numGroup, int numMarks)
         {
             Name = name;
@@ -89,7 +96,7 @@ namespace Univer
         }
         public override string ToString()
         {
-            return Name + ", " + NumGroup + ", " + Marks.Length;
+            return $"{Name};{NumGroup};{Marks.Length}";
         }
     }
 }
