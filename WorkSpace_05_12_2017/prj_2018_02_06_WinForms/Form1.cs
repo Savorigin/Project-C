@@ -55,6 +55,7 @@ namespace prj_2018_02_06_WinForms
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
+            if (textBoxName.ForeColor == Color.Red) { MessageBox.Show("Error name"); return; }
             string Name = textBoxName.Text;
             int NumGroup = int.Parse(textBoxGroup.Text);
             int NumMarks = int.Parse(textBoxNumMarks.Text);
@@ -131,6 +132,16 @@ namespace prj_2018_02_06_WinForms
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Mega programmer: Vladimir Savchenko");
+        }
+        static bool TestEmail(string str)
+        {
+            string pattern = "\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6}";
+            return true;
+        }
+        private void textBoxName_TextChanged(object sender, EventArgs e)
+        {
+            if (TestEmail(textBoxName.Text)) textBoxName.ForeColor = Color.Green;
+            else textBoxName.ForeColor = Color.Red;
         }
     }
 }
