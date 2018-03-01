@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace prj_2018_02_27_01
 {
-    public class Line
+    public class Line : AbstractFigure
     {
         public Point Beg { get; set; }
         public Point End { get; set; }
@@ -28,9 +28,22 @@ namespace prj_2018_02_27_01
             End = new Point(x2, y2);
         }
 
+        public double Length
+        {
+            get
+            {
+                return Math.Sqrt(Math.Pow(Beg.X - End.X, 2) + Math.Pow(Beg.Y - End.Y, 2));
+            }
+        }
+
         public override string ToString()
         {
             return $"{Beg}, {End}";
+        }
+
+        public override void Print()
+        {
+            Console.WriteLine("Line : " + ToString());
         }
     }
 }

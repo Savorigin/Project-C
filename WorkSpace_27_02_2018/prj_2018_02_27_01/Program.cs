@@ -24,13 +24,35 @@ namespace prj_2018_02_27_01
             ColorLine cl1 = new ColorLine(p2, p3, "Black");
             Triangle tr1 = new Triangle(p1, p2, p3);
 
-            object[] masObj = new object[3];
+            AbstractFigure[] masObj = new AbstractFigure[3];
             masObj[0] = p1;
             masObj[1] = l1;
             masObj[2] = tr1;
             foreach (var item in masObj)
             {
-                Console.WriteLine(item);
+                item.Print();
+                //Console.WriteLine(item);
+            }
+
+            Point point1 = new Point();
+            Point cpoint1 = new ColorPoint(p1, "Grey");
+
+            point1.Print();
+            cpoint1.Print();
+
+            Line cline1 = new ColorLine(p2, p3, "Blue");
+            cline1.Print();
+
+            ColorLine[] mascolor = new ColorLine[3];
+            mascolor[0] = new ColorLine(p3, p1, "Orange");
+            mascolor[1] = new ColorLine(p1, p2, "Orange");
+            mascolor[2] = new ColorLine(p1, p2, "Green");
+            foreach (var item in mascolor)
+            {
+                if(item is IFigureColor) ((IFigureColor)item).PrintColorAble();
+                IColor elem = item as IColor;
+                if (elem != null) elem.PrintColorAble();
+                elem?.PrintColorAble();
             }
         }
     }

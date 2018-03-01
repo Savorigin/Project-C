@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace prj_2018_02_27_01
 {
-    public class Triangle
+    public class Triangle : AbstractFigure
     {
         public Point ApexA { get; set; }
         public Point ApexB { get; set; }
@@ -29,6 +29,15 @@ namespace prj_2018_02_27_01
         {
             if (SideAB == null) SideAB = new Line(ApexA, ApexB);
             return SideAB;
+        }
+        public double GetLengthAB()
+        {
+            return SideAB.Length;
+        }
+
+        public override void Print()
+        {
+            Console.WriteLine("Triangle : " + ToString());
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace prj_2018_02_27_01
 {
-    public class ColorPoint : Point
+    public class ColorPoint : Point, IFigureColor
     {
         private Point p1;
         private string v;
@@ -26,6 +26,16 @@ namespace prj_2018_02_27_01
         public override string ToString()
         {
             return $"{base.ToString()}, {Color}";
+        }
+
+        public override void Print()
+        {
+            Console.WriteLine("Color point : " + ToString());
+        }
+
+        public void PrintColorAble()
+        {
+            Console.WriteLine("Print color able : " + ToString());
         }
     }
 }

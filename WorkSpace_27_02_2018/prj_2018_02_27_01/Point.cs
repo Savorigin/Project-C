@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace prj_2018_02_27_01
 {
-    public class Point
+    public class Point : AbstractFigure
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -25,9 +25,15 @@ namespace prj_2018_02_27_01
         {
 
         }
+
         public override string ToString()
         {
             return $"{X}, {Y}";
+        }
+
+        public override void Print()
+        {
+            Console.WriteLine("Point : " + ToString());
         }
     }
 }
